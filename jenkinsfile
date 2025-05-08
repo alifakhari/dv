@@ -4,7 +4,7 @@ pipeline {
     stages {
         stage('Install Trivy') {
             steps {
-                sh 'sudo apt-get update && sudo apt-get install -y trivy'
+                sh 'apt-get update && sudo apt-get install -y trivy'
             }
         }
 
